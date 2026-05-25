@@ -15,7 +15,7 @@
       --gold-bright: #f2c433;
       --purple: #7a2e92;
       --charcoal: #10141c;
-      --charcoal-soft: rgba(16, 20, 28, 0.68);
+      --charcoal-soft: rgba(18, 16, 28, 0.70);
       --copper: #d9947a;
       --line: rgba(247, 244, 238, 0.22);
       --max: 1240px;
@@ -252,10 +252,11 @@
       font-weight: 700;
     }
 
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--paper);
-    }
+  .btn-secondary {
+  background: rgba(122, 46, 146, 0.12);
+  border-color: var(--purple);
+  color: #efe7ff;
+}
 
     .btn:hover {
       transform: translateY(-2px);
@@ -266,9 +267,9 @@
       background: var(--gold-bright);
     }
 
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.13);
-    }
+ .btn-secondary:hover {
+  background: rgba(122, 46, 146, 0.24);
+}
 
     .section {
       padding: 6rem 1.5rem;
@@ -278,6 +279,24 @@
       max-width: var(--max);
       margin: 0 auto;
     }
+
+.purple-word {
+  color: var(--purple);
+  display: inline-block;
+  font-style: italic;
+  transform: rotate(-1.5deg);
+  text-shadow:
+    0 0 18px rgba(122, 46, 146, 0.22),
+    0 0 40px rgba(122, 46, 146, 0.08);
+  transition: all 0.35s ease;
+}
+
+.purple-word:hover {
+  transform: rotate(-1.5deg) translateY(-2px);
+  text-shadow:
+    0 0 22px rgba(122, 46, 146, 0.35),
+    0 0 50px rgba(122, 46, 146, 0.16);
+}
 
     .intro-grid {
       display: grid;
@@ -585,7 +604,10 @@
         <div class="eyebrow">Peru, Vermont · Est. 1827</div>
 
         <div class="hero-card">
-          <h1>Eat. Browse.<br />Groove. Repeat.</h1>
+          <h1>
+  Eat. Browse.<br />
+  <span class="purple-word">Groove.</span> Repeat.
+</h1>
 
 <!-- Vermont food, records, and gathering.
 Wood-fired dinners & local finds.
